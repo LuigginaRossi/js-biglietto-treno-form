@@ -7,7 +7,7 @@ const inputFullUserNameEl = document.querySelector( "[name='full-name-user']" );
 console.log( inputFullUserNameEl )
 
 //2)modifico value:
-inputFullUserNameEl.value = "Mario Rossi";
+//inputFullUserNameEl.value = "Jon Snow";
 //validazione:
 console.log( inputFullUserNameEl.value );
 
@@ -18,7 +18,7 @@ const inputKmEl = document.querySelector( "[name='km']" );
 console.log(inputKmEl)
 
 //2)inserisco value:
-inputKmEl.value = "100";
+//inputKmEl.value = "100";
 
 //valido:
 console.log( inputKmEl.value );
@@ -37,14 +37,15 @@ console.log( selectAgeEl.value );
 //creo add.EventListener:
 //1) trovo elemento button:
 
-const generatorBtnEl = document.querySelector( "generator-btn" )
+const generatorBtnEl = document.getElementById( "generator-btn" )
 
 console.log(generatorBtnEl);
 
 //creo evento:
 
-generatorBtnEl.addEventListener( 'click', function(){
+generatorBtnEl.addEventListener( "click", function () {
     alert( "Hai cliccato il bottone!" );
+    
     
 } );
 
