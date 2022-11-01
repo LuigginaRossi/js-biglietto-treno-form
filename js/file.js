@@ -23,3 +23,29 @@ inputKmEl.value = "100";
 //valido:
 console.log( inputKmEl.value );
 
+//---------------
+
+//leggo il select:
+
+//1) nell'html:
+const selectAgeEl = document.querySelector( "[name='age']" );
+//valido:
+console.log( selectAgeEl.value );
+
+//------
+
+//creo add.EventListener:
+//1) trovo elemento button:
+
+const generatorBtnEl = document.querySelector( "generator-btn" )
+
+console.log(generatorBtnEl);
+
+//creo evento:
+
+generatorBtnEl.addEventListener( 'click', function(){
+    alert( "Hai cliccato il bottone!" );
+    
+} );
+
+
