@@ -5,7 +5,7 @@ const inputFullUserNameEl = document.querySelector( "[name='full-name-user']" );
 console.log( inputFullUserNameEl )
 
 //2)atribuisco value:
-inputFullUserNameEl.value = "Jon Snow";
+inputFullUserNameEl.value = "Jon snow";
 
 console.log( inputFullUserNameEl.value );
 
@@ -59,7 +59,7 @@ console.log(discount40)
 
 //inserisco valori nell'html
 
-divPassangerInfo.innerHTML = `Passeggero: ${inputFullUserNameEl.value}.  Fascia di età: ${selectAgeEl.value}. Percorrenza: ${inputKmEl.value}Km.`
+divPassangerInfo.innerHTML = `Passeggero: ${inputFullUserNameEl.value}.  Il tuo sconto è del ${selectAgeEl.value} %. Percorrenza: ${inputKmEl.value}Km.`
 
 console.log(divPassangerInfo);
 
@@ -73,15 +73,15 @@ console.log(generatorBtnEl);
 //=>
 
 selectAgeEl.addEventListener("click", function () {
-    if ( console.log( selectAgeEl.value ) == 20){
+    if ( console.log( selectAgeEl.value ) === 20){
 
         alert( "In quanto minorenne verrà applicato uno sconto del 20%" );
 
-        divPriceTicket.innerHTML = `Il prezzo del tuo biglietto è: ${ discount20 }`;
+        divPriceTicket.innerHTML = `Il prezzo del tuo biglietto è: ${discount20}`;
 
         console.log(divPriceTicket);
 
-    } else if ( console.log( selectAgeEl.value ) == 40) {
+    } else if ( console.log( selectAgeEl.value ) === 40) {
 
         alert(" In quanto over65 verrà applicato uno sconto del 40%!" );
 
