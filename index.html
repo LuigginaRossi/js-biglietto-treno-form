@@ -23,7 +23,7 @@
             <h2 class="py-3">CALCOLA IL TUO BIGLIETTO</h2>
             <div class="container-input-btn ">
                 <input type="text" name="full-name-user" placeholder="Inserisci il tuo nome completo" >
-                <input type="text" name="km" placeholder="Inserisci i Km che vuoi percorrere" >
+                <input type="number" name="km" placeholder="Inserisci i Km che vuoi percorrere" >
                 <select name="age" id="age-user" class="mb-4">
                     <option value="20">Minorenne</option>
                     <option value="">Maggiorenne</option>
@@ -33,7 +33,8 @@
                 <button class="btn btn-primary" id="generator-btn">Genera</button>
                 <button class="btn btn-primary">Annulla</button>
             </div>
-                
+                <span id="passenger-info"></span>
+                <span id="ticket-price"></span>
             </div>
      
          </div>
