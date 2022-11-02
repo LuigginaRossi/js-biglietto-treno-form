@@ -5,7 +5,7 @@ const inputFullUserNameEl = document.querySelector( "[name='full-name-user']" );
 console.log( inputFullUserNameEl )
 
 //2)atribuisco value:
-inputFullUserNameEl.value = "Jon snow";
+//inputFullUserNameEl.value = "Jon snow";
 
 console.log( inputFullUserNameEl.value );
 
@@ -16,7 +16,7 @@ const inputKmEl = document.querySelector( "[name='km']" );
 console.log(inputKmEl)
 
 //2)inserisco value:
-inputKmEl.value = 100;
+//inputKmEl.value = 100;
 
 console.log( inputKmEl.value );
 
@@ -70,10 +70,17 @@ console.log(divPassangerInfo);
 const generatorBtnEl = document.getElementById( "generator-btn" )
 
 console.log(generatorBtnEl);
-//=>
 
-selectAgeEl.addEventListener("click", function () {
-    if ( console.log( selectAgeEl.value ) === 20){
+generatorBtnEl.addEventListener( "click", function () {
+    
+
+    //QUI SPOSTO LE COSTANTI DI NOME UTENTE, KM E PREZZO
+
+
+    if ( selectAgeEl.value  === 20 ){
+
+        //QUI SPOSTO LA COSTANTE CON IL PREZZO SCONTATO
+
 
         alert( "In quanto minorenne verrà applicato uno sconto del 20%" );
 
@@ -81,7 +88,7 @@ selectAgeEl.addEventListener("click", function () {
 
         console.log(divPriceTicket);
 
-    } else if ( console.log( selectAgeEl.value ) === 40) {
+    } else if (  selectAgeEl.value  === 40) {
 
         alert(" In quanto over65 verrà applicato uno sconto del 40%!" );
 
@@ -96,15 +103,7 @@ selectAgeEl.addEventListener("click", function () {
 
         console.log(divPriceTicket);
     }
-});
 
-
-
-
-generatorBtnEl.addEventListener( "click", function () {
-    alert( "Hai cliccato il bottone!" );
-
-    
 } );
 
 
